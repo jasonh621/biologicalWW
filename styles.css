@@ -327,6 +327,35 @@ a {
   background: var(--color-surface);
 }
 
+.expertise-card-photos {
+  grid-column: 1 / -1;
+}
+
+.project-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-photos img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .project-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .project-photos img {
+    height: 200px;
+  }
+}
+
 /* Contact */
 .contact-intro {
   max-width: 480px;
