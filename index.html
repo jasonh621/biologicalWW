@@ -6,6 +6,9 @@
   <title>Jason Ho, P.Eng | Chemical Engineer — Biological Wastewater Treatment</title>
   <meta name="description" content="Jason Ho, P.Eng is a chemical engineer specializing in biological wastewater treatment, process design, and application engineering at Grundfos (NewTerra)." />
   <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -37,6 +40,11 @@
           designing and proposing biological wastewater treatment systems
           since 2022.
         </p>
+        <div class="hero-chips">
+          <span class="chip">P.Eng</span>
+          <span class="chip">Grundfos (NewTerra)</span>
+          <span class="chip">Canada</span>
+        </div>
         <div class="hero-cta">
           <a href="https://www.linkedin.com/in/jason-h-726504182" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
           <a href="#experience" class="btn btn-secondary">See my experience</a>
@@ -142,32 +150,34 @@
     <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <div class="expertise-grid">
-          <div class="expertise-card">
-            <h3>Anaerobic Digestion Project — California</h3>
-            <p class="timeline-meta">2024</p>
+        <div class="projects-list">
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>Anaerobic Digestion Project — California</h3>
+              <span class="pill">2024</span>
+            </div>
             <p>
               Started up and commissioned an anaerobic membrane bioreactor
               system, from project execution through commissioning —
               assisting with P&amp;IDs and O&amp;M manuals along the way.
             </p>
-          </div>
-          <div class="expertise-card">
-            <h3>Aerobic MBR Project — Houston, TX</h3>
-            <p class="timeline-meta">2023</p>
+          </article>
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>Aerobic MBR Project — Houston, TX</h3>
+              <span class="pill">2023</span>
+            </div>
             <p>
               Worked with the senior process engineer on wastewater system
               design from proposal development through project execution,
               answering client questions and providing process inputs.
             </p>
-          </div>
-          <div class="expertise-card expertise-card-photos">
-            <div class="project-photos">
-              <img src="assets/adi-bvf-tank.jpg" alt="ADI-BVF anaerobic digestion reactor tank exterior at the El Paso, TX site" loading="lazy" />
-              <img src="assets/adi-bvf-rooftop.jpg" alt="View from the top of the ADI-BVF reactor, about 30 ft above ground" loading="lazy" />
+          </article>
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>ADI-BVF Reactor Site Visit — El Paso, TX</h3>
+              <span class="pill">Xylem</span>
             </div>
-            <h3>ADI-BVF Reactor Site Visit — El Paso, TX</h3>
-            <p class="timeline-meta">Xylem</p>
             <p>
               Visited an active anaerobic digestion project to see an
               ADI-BVF reactor in operation firsthand — witnessing the
@@ -175,7 +185,11 @@
               including a climb to the top of the reactor, about 30 ft
               above ground.
             </p>
-          </div>
+            <div class="project-photos">
+              <img src="assets/adi-bvf-tank.jpg" alt="ADI-BVF anaerobic digestion reactor tank exterior at the El Paso, TX site" loading="lazy" />
+              <img src="assets/adi-bvf-rooftop.jpg" alt="View from the top of the ADI-BVF reactor, about 30 ft above ground" loading="lazy" />
+            </div>
+          </article>
         </div>
       </div>
     </section>
