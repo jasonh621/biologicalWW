@@ -135,24 +135,13 @@ a {
 /* Hero */
 .hero {
   position: relative;
-  padding: 6rem 0 8.5rem;
+  padding: 7rem 0 9rem;
   background:
-    linear-gradient(180deg, #e2f1fb 0%, #f6f9fc 100%);
+    linear-gradient(180deg, rgba(6, 24, 43, 0.82) 0%, rgba(6, 24, 43, 0.6) 45%, rgba(6, 32, 56, 0.88) 100%),
+    url("assets/hero-plant.jpg");
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle, rgba(56, 189, 248, 0.22) 0 3px, transparent 3px),
-    radial-gradient(circle, rgba(3, 105, 161, 0.16) 0 2px, transparent 2px),
-    radial-gradient(circle, rgba(56, 189, 248, 0.18) 0 2.5px, transparent 2.5px);
-  background-size: 140px 140px, 90px 90px, 170px 170px;
-  background-position: 0 0, 45px 60px, 100px 20px;
-  mask-image: linear-gradient(180deg, black, transparent 80%);
-  pointer-events: none;
 }
 
 .hero-inner {
@@ -165,20 +154,20 @@ a {
   letter-spacing: 0.1em;
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: 0.9rem;
 }
 
 .hero h1 {
   font-size: clamp(2.5rem, 5.5vw, 3.5rem);
-  color: var(--color-ink);
+  color: #ffffff;
   font-weight: 800;
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   max-width: 560px;
-  color: var(--color-ink-soft);
+  color: #dceafb;
 }
 
 .hero-chips {
@@ -192,13 +181,25 @@ a {
   display: inline-flex;
   align-items: center;
   padding: 0.4rem 0.9rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--color-ink-soft);
-  box-shadow: var(--shadow-sm);
+  color: #ffffff;
+  backdrop-filter: blur(4px);
+}
+
+.hero .btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+}
+
+.hero .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .hero-cta {
@@ -497,6 +498,11 @@ a {
   margin: 0;
   font-size: 0.85rem;
   color: var(--color-ink-soft);
+}
+
+.photo-credit {
+  margin-top: 0.4rem !important;
+  font-size: 0.75rem !important;
 }
 
 /* Mobile nav */
