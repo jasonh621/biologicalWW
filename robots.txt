@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jasonh621.github.io/biologicalWW/sitemap.xml
